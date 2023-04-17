@@ -93,7 +93,7 @@ public class NormalJump : MonoBehaviour
             amountOfJumpsLeft = amountOfJumps;
         }
 
-        if (wallJump.isTouchingWall)
+        if (wallJump.isTouchingWall && !IsGorund)
         {
             checkJumpMultiplier = false;
             wallJump.canWallJump = true;

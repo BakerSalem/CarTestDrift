@@ -44,10 +44,11 @@ public class WallJump : MonoBehaviour
     }
     #endregion
 
+
     #region Public Functions
     public void wallJump(float moveDir)
     {
-        if (canWallJump)
+        if (canWallJump && isWallSliding )
         {
             rb.velocity = new Vector2(rb.velocity.x, 0.0f);
             isWallSliding = false;
@@ -68,9 +69,10 @@ public class WallJump : MonoBehaviour
         }
     }
 
-    public void CheckIfWallSliding(float moveDir,float faceDir)
+    public void CheckIfWallSliding(float moveDir,float faceDir,bool isGrounded)
     {
-        if (isTouchingWall && moveDir == faceDir && rb.velocity.y < 0)
+        // && moveDir == faceDir
+        if (isTouchingWall && rb.velocity.y < 0)
         {
             isWallSliding = true;
         }

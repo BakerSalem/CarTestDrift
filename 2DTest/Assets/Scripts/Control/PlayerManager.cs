@@ -28,7 +28,7 @@ public class PlayerManager : MonoBehaviour
     {
         UpdateAnimations();
         normalJump.CheckIfCanJump(playerMovement.isGrounded);
-        wallJump.CheckIfWallSliding(playerMovement.movementInputDirection, playerMovement.facingDirection);
+        wallJump.CheckIfWallSliding(playerMovement.movementInputDirection, playerMovement.facingDirection, playerMovement.isGrounded);
         normalJump.CheckJump(playerMovement.isGrounded, playerMovement.movementInputDirection, playerMovement.facingDirection);
         rollingManager.CheckRolling();
     }
