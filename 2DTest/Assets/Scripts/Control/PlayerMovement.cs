@@ -149,6 +149,14 @@ namespace TowD.Control
                 }
             }
         }
+        public void DisableFlip()
+        {
+            canFlip = false;
+        }
+        public void EnableFlip()
+        {
+            canFlip = true;
+        }
 
         void Flip()
         {
