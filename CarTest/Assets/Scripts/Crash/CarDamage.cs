@@ -31,16 +31,16 @@ namespace Car.Core
         public WheelCollider bL;
         public WheelCollider bR;
 
-        public GameObject FLW;
-        public GameObject FRW;
-        public GameObject RLW;
-        public GameObject RRW;
+        public GameObject fLW;
+        public GameObject fRW;
+        public GameObject bLW;
+        public GameObject bRW;
         
 
-        public GameObject WheelDamageScript1;
-        public GameObject WheelDamageScript2;
-        public GameObject WheelDamageScript3;
-        public GameObject WheelDamageScript4;
+        public GameObject fL_DamageTire;
+        public GameObject fR_DamageTire;
+        public GameObject bL_DamageTire;
+        public GameObject bR_DamageTire;
 
         #endregion
 
@@ -82,18 +82,18 @@ namespace Car.Core
                 meshfilters[i].mesh.vertices = originalMeshData[i].permaVerts;
                 meshfilters[i].mesh.RecalculateNormals();
                 meshfilters[i].mesh.RecalculateBounds();
-                FRW.SetActive(true);
-                FLW.SetActive(true);
-                RRW.SetActive(true);
-                RLW.SetActive(true);
+                fLW.SetActive(true);
+                fRW.SetActive(true);
+                bLW.SetActive(true);
+                bRW.SetActive(true);
                 fL.radius = .4f;
                 fR.radius = .4f;
                 bL.radius = .4f;
                 bR.radius = .4f;
-                WheelDamageScript1.SetActive(true);
-                WheelDamageScript2.SetActive(true);
-                WheelDamageScript3.SetActive(true);
-                WheelDamageScript4.SetActive(true);
+                fL_DamageTire.SetActive(true);
+                fR_DamageTire.SetActive(true);
+                bL_DamageTire.SetActive(true);
+                bR_DamageTire.SetActive(true);
             }
         }
 
