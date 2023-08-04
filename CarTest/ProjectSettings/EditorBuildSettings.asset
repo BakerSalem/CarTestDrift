@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Zukomazi - Pro Drift Controller v1/Scenes/Demo Scene.unity
+    path: Assets/Scenes/Car.unity
     guid: 4f3933e06b1f66542910dd1eb0e21dec
   m_configObjects: {}
